@@ -5,6 +5,7 @@ import java.io.UnsupportedEncodingException;
 import aethers.notebook.core.AethersNotebook;
 import aethers.notebook.core.AppenderServiceIdentifier;
 import aethers.notebook.core.LoggerServiceIdentifier;
+import aethers.notebook.core.TimeStamp;
 import aethers.notebook.core.UnmanagedAppenderService;
 import aethers.notebook.examples.R;
 import android.app.Activity;
@@ -50,7 +51,7 @@ extends Activity
         @Override
         public void log(
                 LoggerServiceIdentifier identifier,
-                long timestamp,
+                TimeStamp timestamp,
                 Location location,
                 byte[] data)
         throws RemoteException 
@@ -156,7 +157,7 @@ extends Activity
     @SuppressWarnings("unchecked")
     private synchronized void appendMessage(
             LoggerServiceIdentifier identifier,
-            long timestamp,
+            TimeStamp timestamp,
             Location location,
             byte[] data)
     {
