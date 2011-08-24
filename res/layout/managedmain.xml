@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android" 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+        
+    <TextView 
+            android:text="Managed Example"
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+            
+    <Button
+            android:id="@+id/managed_logger_button"
+            android:text="Waiting for connection..."
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:enabled="false"
+	        android:onClick="loggerButtonAction" />
+	        
+	<Button
+            android:id="@+id/managed_appender_button"
+            android:text="Waiting for connection..."
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:onClick="appenderButtonAction" />
+                      
+</LinearLayout>

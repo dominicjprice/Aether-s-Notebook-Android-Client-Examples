@@ -123,8 +123,7 @@ extends Activity
     protected void onResume() 
     {
         super.onResume();
-        Intent i = new Intent("aethers.notebook.action.Log");
-        i.addCategory("aethers.notebook.category.Logger");
+        Intent i = new Intent("aethers.notebook.action.ACTION_CONNECT");
         bindService(i, loggerConnection, BIND_AUTO_CREATE);
     }
 
